@@ -26,13 +26,5 @@ def is_match(message, pattern):
     
     # The answer is whether the entire message matches the entire pattern
     return dp[m][n]
-
-# Test cases:
-print(is_match("aa", "a"))        # False
-print(is_match("aa", "*"))        # True
-print(is_match("cb", "?a"))       # False
-print(is_match("cb", "c?"))       # True
-print(is_match("abc", "a*c"))     # True
-
   
         return False
